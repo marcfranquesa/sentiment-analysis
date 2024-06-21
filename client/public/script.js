@@ -1,13 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("post-btn");
   button.addEventListener("click", handlePostButtonClick);
+
+  const inputText = document.getElementById("input-text");
+  inputText.addEventListener("input", function () {
+    updateResponseDiv({ LABEL: "" });
+  });
 });
 
 async function handlePostButtonClick() {
   const inputText = document.getElementById("input-text").value.trim();
 
   if (inputText === "") {
-    updateResponseDiv({ LABEL: "" });
     return;
   }
 
