@@ -11,3 +11,6 @@ docker compose up
 ```
 
 Now go to `localhost:8080` in your web browser.
+
+> [!WARNING]
+> Ports are hardcoded, :8000 for the backend and :8080 for the frontend.
