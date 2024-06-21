@@ -1,0 +1,17 @@
+body {
+  padding-top: 50px;
+  max-width: 750px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.input {
+  padding-bottom: 10px;
+}
