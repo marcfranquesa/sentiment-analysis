@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from transformers import pipeline
 from typing import Dict
 
-sentiment_pipeline = pipeline("sentiment-analysis")
+sentiment_pipeline = pipeline("sentiment-analysis", model="distilbert/distilbert-base-uncased-finetuned-sst-2-english")
 app = FastAPI()
 
 
