@@ -1,9 +1,9 @@
 services:
-  server:
-    build: ./server
+  api:
+    build: ./api
     ports:
       - "8000:8000"
-  client:
-    build: ./client
+  frontend:
+    build: ./frontend
     ports:
       - "8080:80"
