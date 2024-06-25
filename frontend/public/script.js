@@ -16,7 +16,7 @@ async function handlePostButtonClick() {
   }
 
   try {
-    const responseData = await postData("http://localhost:8000", {
+    const responseData = await postData("/inference/", {
       text: inputText,
     });
     updateResponseDiv(responseData);
